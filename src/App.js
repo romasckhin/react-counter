@@ -1,6 +1,7 @@
 import {useState} from "react";
 import Counter from "./components/Counter";
 import AddCounter from "./components/AddCounter";
+import './App.css'
 
 function App() {
 
@@ -13,10 +14,12 @@ function App() {
   return (
 
       <div>
+
           <AddCounter
               list={list}
               setList={setList}
           />
+
           {list.map(el =>
               <Counter
                   key={el.id}
