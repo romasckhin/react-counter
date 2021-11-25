@@ -1,7 +1,8 @@
 import {useState} from "react";
 import Counter from "./components/Counter";
 import AddCounter from "./components/AddCounter";
-import './App.css'
+import Total from "./components/Total";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
 
   return (
 
-      <div>
+      <div className='container text-center'>
 
           <AddCounter
               list={list}
@@ -27,6 +28,10 @@ function App() {
                   el={el}
                   setList={setList}
               />)}
+          <hr/>
+          <Total
+              list={list}
+          />
 
       </div>
   );

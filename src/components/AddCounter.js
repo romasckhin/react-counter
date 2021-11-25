@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 const AddCounter = ({list, setList}) => {
 
-    const [ newValue , setNewValue ] = useState();
+    const [newValue, setNewValue] = useState();
 
     const addNewCounter = () => {
         const addendum = [...list, {
@@ -19,11 +19,15 @@ const AddCounter = ({list, setList}) => {
 
     return (
 
-        <div>
+        <div className='d-flex mb-3 mt-3'>
 
-            <button onClick={addNewCounter}>Add new counter</button>
+            <button type="button" className="btn btn-primary btn-sm" onClick={addNewCounter}>Add new counter</button>
             {' '}
-            <input type="number" placeholder='value:' value={newValue} onChange={addNewValue}/>
+            <div className="input-group">
+                <input type="number" className="form-control" placeholder='value:' value={newValue}
+                       onChange={addNewValue}/>
+            </div>
+
 
         </div>
     );

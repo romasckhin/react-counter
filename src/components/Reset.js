@@ -10,7 +10,7 @@ const Reset = ({el,list, setList}) => {
     return (
         <>
 
-            {' '}<button onClick={() => resetList(el.id)}>reset</button>
+            {' '}<button type="button" className="btn btn-outline-success btn-sm" onClick={() => resetList(el.id)}>reset</button>
 
         </>
     );

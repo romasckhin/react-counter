@@ -4,7 +4,7 @@ import Delete from "./Delete";
 
 const Counter = ({el, list, setList}) => {
 
-    const [color , setColor] = useState('#63b294')
+    const [color, setColor] = useState('#63b294')
 
     const counterPlus = (id) => {
         const plus = list.map(el => el.id === id ? {...el, value: el.value + 1} : el)
@@ -24,13 +24,13 @@ const Counter = ({el, list, setList}) => {
 
         <div>
 
-            <button onClick={() => counterPlus(el.id)}>+</button>
+            <button type="button" className="btn btn-outline-primary btn-sm" onClick={() => counterPlus(el.id)}>+</button>
             {' '}
-                <span style={{color: `${color}`}} >
+            <strong style={{color: `${color}`}}>
                     {el.value}
-                </span>
+                </strong>
             {' '}
-            <button onClick={() => counterMinus(el.id)}>-</button>
+            <button type="button" className="btn btn-outline-primary btn-sm" onClick={() => counterMinus(el.id)}>-</button>
             <Reset
                 el={el}
                 list={list}

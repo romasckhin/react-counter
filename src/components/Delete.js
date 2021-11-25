@@ -9,7 +9,7 @@ const Delete = ({el,list,setList}) => {
 
     return (
         <>
-            <button onClick={() => deleteCounter(el.id)} >delete</button>
+            <button type="button" className="btn btn-outline-danger btn-sm" onClick={() => deleteCounter(el.id)} >delete</button>
         </>
     );
 };
