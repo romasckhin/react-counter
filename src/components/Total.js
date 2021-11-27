@@ -4,6 +4,9 @@ const Total = ({list}) => {
 
     const [ total , setTotal ] = useState(list.length)
 
+    console.log('total',total)
+    console.log('list',list.length)
+
     if ( list.length < total ) {
         setTotal(total - 1)
     }

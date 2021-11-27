@@ -21,8 +21,9 @@ function App() {
               setList={setList}
           />
 
-          {list.map(el =>
+          {list.map((el,index) =>
               <Counter
+                  index={index}
                   key={el.id}
                   list={list}
                   el={el}

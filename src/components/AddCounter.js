@@ -21,7 +21,7 @@ const AddCounter = ({list, setList}) => {
 
         <div className='d-flex mb-3 mt-3'>
 
-            <button type="button" className="btn btn-primary btn-sm" onClick={addNewCounter}>Add new counter</button>
+            <button type="button" className="btn btn-primary btn-sm me-3" onClick={addNewCounter}>Add new counter</button>
             {' '}
             <div className="input-group">
                 <input type="number" className="form-control" placeholder='value:' value={newValue}

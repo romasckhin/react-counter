@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import Reset from "./Reset";
 import Delete from "./Delete";
+import Offset from "./Offset";
 
-const Counter = ({el, list, setList}) => {
+const Counter = ({el, list, setList,index}) => {
 
     const [color, setColor] = useState('#63b294')
 
@@ -23,6 +24,13 @@ const Counter = ({el, list, setList}) => {
     return (
 
         <div>
+
+            <Offset
+                index={index}
+                el={el}
+                list={list}
+                setList={setList}
+            />
 
             <button type="button" className="btn btn-outline-primary btn-sm" onClick={() => counterPlus(el.id)}>+</button>
             {' '}
