@@ -13,7 +13,7 @@ const Offset = ({el, list, setList, index}) => {
     const offsetValueDown = (id) => {
         const index = list.findIndex(el => el.id === id)
 
-        const res = [ ...list.slice(0,index - 1), list[index], list[index - 1], ...list.slice(index + 1) ]
+        const res = [ ...list.slice(0, index), list[index + 1], list[index], ...list.slice(index + 2) ]
         setList(res)
     }
 

@@ -23,7 +23,7 @@ const Counter = ({el, list, setList,index}) => {
 
     return (
 
-        <div>
+        <div className='pb-1'>
 
             <Offset
                 index={index}
