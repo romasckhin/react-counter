@@ -1,24 +1,14 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const Total = ({list}) => {
 
-    const [ total , setTotal ] = useState(list.length)
 
-    console.log('total',total)
-    console.log('list',list.length)
-
-    if ( list.length < total ) {
-        setTotal(total - 1)
-    }
-    if ( list.length > total ) {
-        setTotal(total + 1)
-    }
 
     return (
 
         <div>
 
-            total : {total}
+            total : {list.length}
 
         </div>
 
